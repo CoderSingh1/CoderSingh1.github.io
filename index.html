@@ -3,42 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satnam Singh Maggo - Android Developer</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        header { background: #333; color: #fff; padding: 20px; font-size: 24px; }
-        section { padding: 20px; }
-        .projects a { display: block; margin: 10px 0; text-decoration: none; color: #007bff; }
-        footer { background: #333; color: #fff; padding: 10px; margin-top: 20px; }
-    </style>
+    <title>Coder Singh | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Satnam Singh Maggo</h1>
-        <p>Android Developer | Kotlin Enthusiast</p>
+        <nav>
+            <h1>Satnam Singh Maggo</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <section>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm Satnam Singh Maggo</h2>
+            <p>Android Developer | Kotlin Enthusiast</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+    
+    <section id="about">
         <h2>About Me</h2>
-        <p>Passionate Android Developer with experience in Kotlin, Firebase, and As a budding Android developer eager to embark on a journey of innovation and growth, I bring a passion for crafting user-friendly mobile experiences and a commitment to continuous learning. With a solid foundation in programming languages and a drive to explore the latest trends and technologies in the Android ecosystem, I'm excited to contribute to dynamic projects and collaborate with like-minded professionals. Let's connect and explore opportunities to create impactful mobile solutions together.As a budding Android developer eager to embark on a journey of innovation and growth, I bring a passion for crafting user-friendly mobile experiences and a commitment to continuous learning. With a solid foundation in programming languages and a drive to explore the latest trends and technologies in the Android ecosystem, I'm excited to contribute to dynamic projects and collaborate with like-minded professionals. Let's connect and explore opportunities to create impactful mobile solutions together..</p>
+        <p>Passionate Android Developer with expertise in Kotlin. I create user-friendly mobile applications and explore new technologies.</p>
     </section>
     
-    <section class="projects">
+    <section id="projects">
         <h2>Projects</h2>
-        <a href="https://github.com/CoderSingh1/GiftCraft">GiftCraft A Gift Shop App</a>
-        <a href="https://github.com/CoderSingh1/Basicskotlins">To-Do List App</a>
-        <a href="https://github.com/CoderSingh1/E_commerce2">E-Commerce App</a>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>To-Do List App</h3>
+                <p>A simple and efficient task manager without a database.</p>
+                <a href="#">GitHub Repo</a>
+            </div>
+            <div class="project-card">
+                <h3>Gift Shopping App</h3>
+                <p>E-commerce app using Firebase for event-related gift shopping.</p>
+                <a href="#">GitHub Repo</a>
+            </div>
+        </div>
     </section>
     
-    <section>
-        <h2>Contact</h2>
-        <p>Email: satnamsinghmaggo153@gamil.com.com</p>
-        <p>GitHub: <a href="https://github.com/CoderSingh1">github.com/CoderSingh1</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/satnam-singh-88a8a428a/">linkedin.com/in/Satnam Singh</a></p>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: satnamsinghmaggo1532@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/codersingh1">github.com/codersingh1</a></p>
     </section>
     
     <footer>
-        <p>&copy; 2025 Satnam Singh Maggo</p>
+        <p>&copy; 2025 Satnam Singh Maggo. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
