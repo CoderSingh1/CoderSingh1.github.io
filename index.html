@@ -23,20 +23,23 @@
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
         }
         #hero {
             background: linear-gradient(to right, #6a11cb, #2575fc);
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
         .btn {
             display: inline-block;
@@ -47,6 +50,11 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2575fc;
+            color: white;
         }
         #projects {
             text-align: center;
@@ -64,14 +72,16 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 300px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: relative;
-            bottom: 0;
             width: 100%;
         }
     </style>
@@ -79,7 +89,7 @@
 <body>
     <header>
         <nav>
-            <h1>Coder Singh</h1>
+            <h1>Satnam Singh Maggo</h1>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
