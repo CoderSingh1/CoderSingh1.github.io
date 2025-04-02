@@ -3,138 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coder Singh | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        #hero {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: white;
-            color: #2575fc;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-        .btn:hover {
-            background-color: #2575fc;
-            color: white;
-        }
-        #projects {
-            text-align: center;
-            padding: 40px;
-        }
-        .project-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .project-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-        }
-    </style>
+    <title>Satnam Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
+        <h1>Coder Singh</h1>
         <nav>
-            <h1>Satnam Singh Maggo</h1>
             <ul>
+                <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Hi, I'm Satnam Singh Maggo</h2>
-            <p>Android Developer | Kotlin Enthusiast</p>
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Passionate Android Developer with expertise in Kotlin. I create user-friendly mobile applications and explore new technologies.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>To-Do List App</h3>
-                <p>A simple and efficient task manager without a database.</p>
-                <a href="#">GitHub Repo</a>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Hi, I'm <span>Satnam Singh Maggo</span></h2>
+                <p>Android Developer | Kotlin Enthusiast</p>
+                <a href="#projects" class="btn">View Projects</a>
             </div>
-            <div class="project-card">
-                <h3>Gift Shopping App</h3>
-                <p>E-commerce app using Firebase for event-related gift shopping.</p>
-                <a href="#">GitHub Repo</a>
+            <div class="user-photo">
+                <img src="../User_icon_2.svg.png" alt="Profile Picture">
+            </div>
+        </section>
+        <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <div class="about-content">
+            <p>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User Icon" class="icon"> 
+                I am a passionate Android Developer with expertise in Kotlin, dedicated to crafting seamless and efficient mobile applications.
+            </p>
+            <p>
+                <img src="https://cdn-icons-png.flaticon.com/512/2332/2332719.png" alt="Skills Icon" class="icon"> 
+                Skilled in Android app development, UI/UX design, API integration, and performance optimization.
+            </p>
+            
+            <p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1160/1160358.png" alt="Technology Icon" class="icon"> 
+                Enthusiastic about exploring new technologies, open-source contributions, and staying updated with the latest industry trends.
+            </p>
+        </div>
+        <div class="about-photo">
+            <img src="../User_icon_2.svg.png" alt="Profile Picture">
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <h2>My Projects</h2>
+    <p>Here are some of the projects I have worked on, ranging from task management to e-commerce solutions.</p>
+    
+    <div class="project-container">
+        <div class="project-card">
+            <h3>To-Do List App</h3>
+            <p>A simple and efficient task manager that helps you keep track of daily tasks without needing a database.</p>
+            <ul>
+                <li>Easy task addition and deletion</li>
+                <li>Local storage support</li>
+                <li>Minimalist UI for better user experience</li>
+            </ul>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Gift Shopping App</h3>
+            <p>An e-commerce application using Firebase to help users find and purchase event-related gifts.</p>
+            <ul>
+                <li>Real-time database updates</li>
+                <li>Secure user authentication</li>
+                <li>Smooth shopping experience</li>
+            </ul>
+            <a href="#">View on GitHub</a>
+        </div>
+        
+        
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>I'd love to hear from you! Feel free to reach out for projects, collaborations, or just to say hello.</p>
+
+    <div class="contact-container">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <h3>Email</h3>
+                <p><a href="mailto:satnamsinghmaggo153@gmail.com">satnamsinghmaggo153@gmail.com</a></p>
             </div>
         </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: satnamsinghmaggo153@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/codersingh1">github.com/codersingh1</a></p>
-    </section>
-    
+
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/codersingh1" target="_blank">github.com/codersingh1</a></p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/codersingh1" target="_blank">linkedin.com/in/codersingh1</a></p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-facebook"></i>
+            <div>
+                <h3>Facebook</h3>
+                <p><a href="https://www.facebook.com/codersingh1" target="_blank">facebook.com/codersingh1</a></p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-twitter"></i>
+            <div>
+                <h3>Twitter</h3>
+                <p><a href="https://twitter.com/codersingh1" target="_blank">twitter.com/codersingh1</a></p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <div>
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/codersingh1" target="_blank">instagram.com/codersingh1</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
     <footer>
-        <p>&copy; 2025 Satnam Singh. All Rights Reserved.</p>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Satnam Singh</h3>
+                <p>Passionate Developer | Open-Source Contributor</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/codersingh1" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Satnam Singh. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+    
+    
 </body>
 </html>
